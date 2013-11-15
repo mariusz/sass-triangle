@@ -1,4 +1,4 @@
-=arrow($direction: top, $size: 1em, $color: white)
+=triangle($direction: top, $size: 1em, $color: white)
   width: 0
   height: 0
   @if $direction == top or $direction == bottom

@@ -5,7 +5,7 @@ triangles method](http://davidwalsh.name/css-triangles).
 
 ## Syntax
 
-    @mixin arrow($direction, $size, $color)
+    @mixin triangle($direction, $size, $color)
 
 ## Usage
 
@@ -23,4 +23,4 @@ To create a simple 10px tooltip with triangle on top:
         top: -$size
         left: 50%
         margin-left: -($size / 2)
-        +arrow(top, 10px, white)
+        +triangle(top, 10px, white)
