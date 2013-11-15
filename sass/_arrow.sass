@@ -1,0 +1,22 @@
+@mixin arrow($direction: top, $size: 1em, $color: white)
+  width: 0
+  height: 0
+
+  @if $direction == top or $direction == bottom
+    border-left: $size solid transparent
+    border-right: $size solid transparent
+  @else
+    border-top: $size solid transparent
+    border-bottom: $size solid transparent
+
+  @if $direction == top
+    border-bottom: $size solid $color
+
+  @if $direction == bottom
+    border-top: $size solid $color
+
+  @if $direction == left
+    border-right: $size solid $color
+
+  @if $direction == right
+    border-left: $size solid $color
